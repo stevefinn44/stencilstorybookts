@@ -12,7 +12,7 @@ addDecorator(withKnobs);
 addDecorator(withA11y);
 
 // Import all files in the stories directory ending in *.stories.js
-const req = require.context('../stories', true, /.stories.js$/);
+const req = require.context('../src/stories', true, /.stories.ts$/);
 
 // Add global decorators
 const loadStories = () => {
